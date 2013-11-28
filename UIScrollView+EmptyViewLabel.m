@@ -1,13 +1,16 @@
 //
 //  UIScrollView+EmptyViewLabel.m
-//  LifeOf
+//
 //
 //  Created by Ivan Parfenchuk on 21.11.13.
-//  Copyright (c) 2013 Netboss Media. All rights reserved.
+//  Copyright (c) 2013 Ivan Parfenchuk. All rights reserved.
 //
 
 #import "UIScrollView+EmptyViewLabel.h"
 #import <objc/runtime.h>
+
+static CGFloat const defaultYOffset = 20.0f;
+static CGFloat const defaultHeight = 100.0f;
 
 static char UIScrollViewViewEmptyViewLabel;
 
@@ -18,12 +21,13 @@ static char UIScrollViewViewEmptyViewLabel;
 {
     if(!self.emptyViewLabel) {
         
-        UILabel * label = [[UILabel alloc] initWithFrame:CGRectMake(0, self.contentInset.top + 50, self.bounds.size.width, 50)];
+        UILabel * label = [[UILabel alloc] initWithFrame:CGRectMake(0, self.contentInset.top + defaultYOffset, self.bounds.size.width, defaultHeight)];
         label.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleBottomMargin;
         label.text = text;
         label.backgroundColor = [UIColor clearColor];
         label.textColor = [UIColor lightGrayColor];
         label.textAlignment = NSTextAlignmentCenter;
+        label.numberOfLines = 0;
         [self addSubview:label];
         self.emptyViewLabel = label;
         self.showsEmptyViewLabel = NO;

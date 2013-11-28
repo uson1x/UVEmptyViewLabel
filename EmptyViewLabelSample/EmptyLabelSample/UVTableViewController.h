@@ -1,5 +1,5 @@
 //
-//  UVViewController.h
+//  UVTableViewController.h
 //  EmptyLabelSample
 //
 //  Created by Ivan Parfenchuk on 28.11.13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UVViewController : UIViewController
+@interface UVTableViewController : UITableViewController
 
 @end

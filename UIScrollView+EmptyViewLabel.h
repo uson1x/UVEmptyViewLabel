@@ -1,9 +1,9 @@
 //
 //  UITableView+EmptyTableViewLabel.h
-//  LifeOf
+//
 //
 //  Created by Ivan Parfenchuk on 21.11.13.
-//  Copyright (c) 2013 Netboss Media. All rights reserved.
+//  Copyright (c) 2013 Ivan Parfenchuk. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
