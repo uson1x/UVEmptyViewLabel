@@ -7,9 +7,9 @@ If you have a lot of UITableViews or UICollectionViews in your project, you can 
 How to use
 ===========
 1. Copy `UIScrollView+EmptyViewLabel.h` and `UIScrollView+EmptyViewLabel.m` into your project.
-2. Add `[self.tableView addEmptyViewLabelWithText:@"Table view is empty"];` into `- (void)viewDidLoad` method of your UIViewController subclass.
+2. Add `[self.tableView addEmptyViewLabelWithText:@"Table view is empty"];` into `- (void)viewDidLoad` method of your `UIViewController` subclass.
 3. Customize label's frame and other properties via `self.tableview.emptyViewLabel`.
-4. Whenever the data source is updated, set `self.tableView.showsEmptyViewLabel` to YES or NO.
+4. Whenever the data source is updated, set `self.tableView.showsEmptyViewLabel` to `YES` or `NO`.
 
 ``` objective-c
 - (void)viewDidLoad
